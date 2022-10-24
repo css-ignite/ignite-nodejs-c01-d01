@@ -1,4 +1,4 @@
-# Desafio 01 - Todos
+# Ignite - Trilha NodJS - Chapter I - Desafio 01 - Todos
 
 ## Sobre o desafio
 
