@@ -1,0 +1,61 @@
+
+@baseUrl = http://localhost:3333
+
+GET {{baseUrl}}/users HTTP/1.1
+Content-Type: application/json
+Accept: application/json
+
+###
+
+POST {{baseUrl}}/users HTTP/1.1
+Content-Type: application/json
+Accept: application/json
+
+{ 
+	"name": "Danilo Vieira", 
+	"username": "danilo"
+}
+
+###
+
+GET {{baseUrl}}/todos HTTP/1.1
+Content-Type: application/json
+Accept: application/json
+username: danilo
+
+###
+
+POST {{baseUrl}}/todos HTTP/1.1
+Content-Type: application/json
+Accept: application/json
+username: danilo
+
+{ 
+	"title": "Nome da tarefa"
+}
+
+###
+
+PUT {{baseUrl}}/todos/12cdf8b4-9518-46c8-8536-c20a2b115289 HTTP/1.1
+Content-Type: application/json
+Accept: application/json
+username: danilo
+
+{ 
+	"title": "Nome da tarefa",
+    "deadline": "2022-10-30"
+}
+
+###
+
+PATCH  {{baseUrl}}/todos/12cdf8b4-9518-46c8-8536-c20a2b115289/done HTTP/1.1
+Content-Type: application/json
+Accept: application/json
+username: danilo
+
+###
+
+DELETE  {{baseUrl}}/todos/12cdf8b4-9518-46c8-8536-c20a2b115289 HTTP/1.1
+Content-Type: application/json
+Accept: application/json
+username: danilo
